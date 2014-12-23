@@ -1,0 +1,32 @@
+{
+  "name": "bluebird-cachify",
+  "version": "0.1.0",
+  "description": "Easily cache Bluebird promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gschwa/bluebird-cachify.git"
+  },
+  "author": "Gary Schwartzbard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gschwa/bluebird-cachify/issues"
+  },
+  "homepage": "https://github.com/gschwa/bluebird-cachify",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "cache-manager": "^0.14.0",
+    "debug": "^2.1.0",
+    "json-hash": "0.0.4",
+    "lodash": "^2.4.1",
+    "lru-cache-plus": "^2.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "load-common-gulp-tasks": "^1.1.0",
+    "should": "^4.4.1"
+  }
+}
