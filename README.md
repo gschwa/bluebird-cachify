@@ -6,17 +6,17 @@ A non-invasive way to cache your [Bluebird](https://www.npmjs.com/package/bluebi
 ## Quick Start
 
 ```javascript
-var Promise = require('bluebird');
-var BluebirdCachify = require('bluebird-cachify)();
-
-
-/* assume you have an instance 'sample' with a function 'foo' that returns a promise */
-BluebirdCachify.cachify(sample, 'foo', 5000); // cache for 5 seconds
-
-sample.foo(10) 
-  .then(function (result) {
-    return sample.foo(10); // returns cached result
-  })
+  var Promise = require('bluebird');
+  var BluebirdCachify = require('bluebird-cachify)();
+  
+  
+  // assume you have an instance sample with a function named foo that returns a promise 
+  BluebirdCachify.cachify(sample, 'foo', 5000); // cache for 5 seconds
+  
+  sample.foo(10) 
+    .then(function (result) {
+      return sample.foo(10); // returns cached result
+    })
 ```
 
 ## tl; dr
