@@ -1,4 +1,4 @@
-Bluebird Cachify
+Bluebird Cachify [![Build Status](https://travis-ci.org/gschwa/bluebird-cachify.svg?branch=develop)](https://travis-ci.org/gschwa/bluebird-cachify)
 =====================
 
 A non-invasive way to cache your [Bluebird](https://www.npmjs.com/package/bluebird) promises. It leverages [lru-cache-plus](https://www.npmjs.com/package/lru-cache-plus) to cache the results.
