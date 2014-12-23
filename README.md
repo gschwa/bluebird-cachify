@@ -39,10 +39,10 @@ var BluebirdCachify = require('bluebird-cachify')('namespace2', {max: 1000, maxA
 
 ## API
 
-`require('bluebird-cachify')([String namespace] [, Object options]) --> BluebirdCachify`
+#####`require('bluebird-cachify')([String namespace] [, Object options])` -> `BluebirdCachify`
 
 Creates or returns a `BluebirdCachify` object for the given `namespace`. Without the optional `namespace` the *default* is returned. Optionally, an `options` object can be provided to customize the cache. The default options are: `{max: 500, maxAge: 3600000}` (see: [lru-cache-plus](https://www.npmjs.com/package/lru-cache-plus))
 
-`BluebirdCachify.cachify(Object instance, String functionName [, Number ttl])`
+#####`BluebirdCachify.cachify(Object instance, String functionName [, Number ttl])`
 
 Caches the given `functionName` for the given `instance`. Optionally, pass `ttl` in milliseconds.
