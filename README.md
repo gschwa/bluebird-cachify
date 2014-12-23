@@ -46,3 +46,7 @@ Creates or returns a `BluebirdCachify` object for the given `namespace`. Without
 #####`BluebirdCachify.cachify(Object instance, String functionName [, Number ttl])`
 
 Caches the given `functionName` for the given `instance`. Optionally, pass `ttl` in milliseconds.
+
+#####`instance.function.restore()`
+
+Removes caching from the function.
