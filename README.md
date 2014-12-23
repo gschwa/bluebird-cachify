@@ -10,7 +10,7 @@ var Promise = require('bluebird');
 var BluebirdCachify = require('bluebird-cachify')();
 
 
-// assume you have an instance sample with a function named foo that returns a promise 
+// assume you have an instance 'sample' with a function named 'foo' that returns a promise 
 BluebirdCachify.cachify(sample, 'foo', 5000); // cache for 5 seconds
 
 sample.foo(10) 
