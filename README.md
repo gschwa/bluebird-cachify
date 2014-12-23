@@ -6,17 +6,17 @@ A non-invasive way to cache your [Bluebird](https://www.npmjs.com/package/bluebi
 ## Quick Start
 
 ```javascript
-  var Promise = require('bluebird');
-  var BluebirdCachify = require('bluebird-cachify)();
-  
-  
-  // assume you have an instance sample with a function named foo that returns a promise 
-  BluebirdCachify.cachify(sample, 'foo', 5000); // cache for 5 seconds
-  
-  sample.foo(10) 
-    .then(function (result) {
-      return sample.foo(10); // returns cached result
-    })
+var Promise = require('bluebird');
+var BluebirdCachify = require('bluebird-cachify')();
+
+
+// assume you have an instance sample with a function named foo that returns a promise 
+BluebirdCachify.cachify(sample, 'foo', 5000); // cache for 5 seconds
+
+sample.foo(10) 
+  .then(function (result) {
+    return sample.foo(10); // returns cached result
+  })
 ```
 
 ## tl; dr
@@ -26,13 +26,13 @@ By default, `BluebirdCachify` uses a single cache instance to store results. It 
 
 ```javascript
 // using a different namespace
-var BluebirdCachify = require('bluebird-cachify)('different namespace');
+var BluebirdCachify = require('bluebird-cachify')('different namespace');
 
 // setting default options
-var BluebirdCachify = require('bluebird-cachify)({max: 1000, maxAge: 8000});
+var BluebirdCachify = require('bluebird-cachify')({max: 1000, maxAge: 8000});
 
 // creating a new namespace with custom options
-var BluebirdCachify = require('bluebird-cachify)('namespace2', {max: 1000, maxAge: 8000});
+var BluebirdCachify = require('bluebird-cachify')('namespace2', {max: 1000, maxAge: 8000});
 ``` 
 
 *See:* [lru-cache-plus](https://www.npmjs.com/package/lru-cache-plus) for possible options and documentation
