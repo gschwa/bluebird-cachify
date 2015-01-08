@@ -1,6 +1,8 @@
 Bluebird Cachify [![Build Status](https://travis-ci.org/gschwa/bluebird-cachify.svg?branch=develop)](https://travis-ci.org/gschwa/bluebird-cachify) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gschwa/bluebird-cachify?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 =====================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gschwa/bluebird-cachify?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A non-invasive way to cache your [Bluebird](https://www.npmjs.com/package/bluebird) promises. It leverages [lru-cache-plus](https://www.npmjs.com/package/lru-cache-plus) to cache the results.
 
 ## Quick Start
